@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/usuarios', require('./routes/usuario.route'));
-
+app.use('/login', require('./routes/login.route'));
 
 // Server listening
 app.listen(port, () => console.log('Server listening on port:', port));
