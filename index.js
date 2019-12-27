@@ -24,13 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Routes
-app.get('/api', (req, res) => {
-    let result = {
-        ok: true,
-        message: 'GET Request OK!'
-    }
-    res.status(200).json(result);
-});
+app.use('/usuarios', require('./routes/usuario.route'));
 
 
 // Server listening
