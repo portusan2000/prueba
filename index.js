@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 const cors = require('cors');
 const morgan = require('morgan');
 const path = require('path');
-
+const { mongoose } = require('./database/database');
 
 const app = express();
 
